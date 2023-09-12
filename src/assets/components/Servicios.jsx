@@ -116,7 +116,7 @@ const Service = () => {
             id="nuestrosServ"
             className=" text-5xl mb-2  font-bold text-green-500  md:pt-4"
           >
-            CERTF. NO NATURALIZACION
+            CERTF.NO NATURALIZACION
           </h1>
           <p className="text-3xl text-left text-gray-700-900">
             {text[6].certNoNaturalizacion}

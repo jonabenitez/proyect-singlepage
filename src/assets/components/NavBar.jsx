@@ -1,18 +1,20 @@
+import logo from '../img/logo.png'
+
+
 function NavBar() {
   const whatsapp = (
     <ul>
       {" "}
-      <li className="text-3xl  text-green-500 pl-4 hover:text-green-700 duration-300">
+      <li className="text-3xl  text-green-500 lg:pl-4 hover:text-green-700 duration-300">
         <ion-icon name="logo-whatsapp"></ion-icon>
       </li>
     </ul>
   );
   
   const instagram = (
-    <ul className="ml-10">
-      {" "}
-        {" "}
-      <li className="text-3xl duration-300">
+    <ul className="lg:ml-10">
+
+      <li className="text-3xl  duration-300">
         <ion-icon name="logo-instagram"></ion-icon>{" "}
       </li>
     </ul>
@@ -24,7 +26,7 @@ function NavBar() {
     { name: "Contactos", link: "#contactos" },
     {
       name: instagram,
-      link: "https://api.whatsapp.com/send?phone=393295497391",
+      link: "https://www.instagram.com/animateaemigrar/?igshid=MzNlNGNkZWQ4Mg==",
     },
     {
       name: whatsapp,
@@ -45,7 +47,7 @@ function NavBar() {
           className="font-bold text-2xl cursor-pointer flex items-center text-gray-800" /**DIV QUE CONTIENE EL LOGO */
         >
           <span className="text-4xl text-slate-600 mr-1 pt-2">
-            <ion-icon name="rocket-outline"></ion-icon>
+           <img className='relative max-h-20 lg:px-4' src={logo} alt="logo"  />
           </span>
           <span className="pl-3 underline-offset-1 ">Animate a emigrar</span>
         </div>
